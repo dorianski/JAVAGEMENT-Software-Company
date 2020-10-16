@@ -1,0 +1,513 @@
+/* culoare logo: 4aa998 */
+
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    }
+    
+    /* MENIU */
+    
+    .menu{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0, 0.5);
+    transition: .5s ease-in-out;
+    z-index: 9999;
+    }
+    
+    .nav-links{
+    display: flex;
+    justify-content: space-around;
+    }
+    
+    .nav-links li{
+    list-style: none;
+    padding: 20px;
+    }
+    
+    .nav-links a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    }
+    
+    .nav-links a:hover{
+    transform: scale(1.1);
+    border-top: 1px solid #4aa998;
+    border-left: 1px solid #4aa998;
+    }
+    
+    .burger{
+    display: none;
+    cursor: pointer;
+    }
+    
+    .burger div{
+        width: 25px;
+        height: 3px;
+        margin: 5px;
+        background-color: white;
+        transition: .7s ease-in-out;
+    }
+    
+    #ro{
+        width: 30px;
+        height: 20px;
+        transition: .3s ease-in-out;
+    }
+    
+    #rohover:hover{
+        transform: scale(1.1);
+        border: none;
+    }
+    
+    #ukhover:hover{
+        transform: scale(1.1);
+        border: none;
+    }
+    
+    #uk{
+        width: 30px;
+        height: 20px;
+        margin-left: 10px;
+        transition: .3s ease-in-out;
+    }
+
+
+.part1{
+    height: 80vh;
+    width: 100%;
+    background-image: url('../img/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    background-position: center;
+}
+
+.part1 h1{
+    padding-top: 20vh;
+    color: white;
+    font-size: 70px;
+}
+
+.fb{
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+}
+
+.fb h3{
+    font-size: 60px;
+    color: #4aa998;
+    text-align: center;
+}
+
+.fb-page{
+    margin-left: 25%;
+}
+
+.wrap{
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    height: 20vh;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+/* CONTACT */
+
+#contact{
+    height: 100%;
+    width: 100%;
+}
+
+.contact{
+    min-height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#reused_form{
+    border: 1px solid yellow;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 10%;
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+	border-radius: 10px;
+    border: 0;
+    padding: 25px;
+    min-height: 50vh;
+}
+
+#reused_form button{
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 10%;
+    transition: .2s ease-in-out;
+}
+
+#reused_form button:hover{
+    background-color: #4aa998;
+}
+
+#reused_form label{
+    font-weight: bold;
+    color: black;
+}
+
+#reused_form input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+#reused_form textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+}
+
+.contact h3{
+    font-size: 60px;
+    color: #4aa998;
+    text-align: center;
+    padding-top: 10%;
+}
+
+
+    /* FOOTER */
+
+
+.footerwrap{
+    min-height: 30vh;
+    width: 100%;
+    position: relative;
+}
+
+.footer{
+min-height: 30vh;
+width: 100%;
+display: flex;
+justify-content: space-between;
+clip-path: polygon(0 0, 20% 0, 50% 100%, 0 100%);
+background-color: #d6cece;
+}
+
+.footer1{
+    width: 30%;
+    height: 30vh;
+}
+
+.footer1 a{
+    font-size: 60px;
+    color: #4aa998;
+    background-color: white;
+    padding: 7px;
+    transition: .5s ease-in-out;
+}
+
+.footer1 a:hover{
+    transform: scale(1.2);
+    color: white;
+    background-color: #4aa998;
+}
+
+.social{
+    padding-left: 20%;
+    padding-top: 20%;
+}
+
+
+.footer3{
+    width: 30%;
+    height: 30vh;
+    position: absolute;
+    left: 60%;
+    top: 0%;
+}
+
+.footer3 h2{
+    font-size: 30px;
+    padding-left: 40%;
+}
+
+#email{
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+#mess{
+    font-size: 34px;
+    padding-right: 5px;
+}
+
+#twitter{
+    margin-left: 10%;
+}
+
+.footer2{
+    width: 30%;
+    height: 30vh;
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer2 ul li{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer2 a{
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    font-size: 18px;
+}
+
+.footer2 a:hover i{
+    padding-right: 5px;
+}
+
+.footer3 p{
+    padding-top: 5%;
+    padding-left: 40%;
+    color: gray;
+}
+
+.footer3 h2 a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease-in-out;
+}
+
+.footer3 h2 a:Hover{
+    text-decoration: underline;
+}
+
+.footer3 h2 a i{
+    margin-right: 5px;
+}
+
+#contact2{
+    color: gray;
+    text-decoration: none;
+    transition: .1s ease-in-out;
+}
+
+#contact2:hover{
+    color: teal;
+}
+
+.design{
+min-height: 10vh;
+width: 100%;
+background-color: #000000;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.design h3{
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px){
+    .nav-links{
+    display: none;
+    }
+    .skill{
+        padding-top: 5%;
+        min-height: 60vh;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5%;
+        grid-row-gap: 5%;
+        grid-column-gap: 2%;
+    }
+    .burger{
+    display: block;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        min-height: 90vh;
+        top: 10vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        display: none;
+        z-index: 6;
+    }
+    .nav-links li{
+        opacity: 1;
+        color: white;
+    }
+    .burger{
+        display: block;
+    }
+    .footerwrap{
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    
+    .footer{
+        height: auto;
+        width: 100%;
+        clip-path: none;
+        background-color: white;
+    }
+    .footer1{
+        width: 100%;
+        height: 10vh;
+        position: relative;
+        float: left;
+        margin: 0;
+        left: 0%;
+        top: 0;
+    }
+    .footer2{
+        width: 100%;
+        height: 20vh;
+        position: relative;
+        float: left;
+        margin: 0;
+        left: 0%;
+        top: 0;
+    }
+    .footer3{
+        width: 100%;
+        height: 30vh;
+        position: relative;
+        float: left;
+        margin: 0;
+        left: 0%;
+        top: 0%;
+        text-align: center;
+    }
+    
+    #twitter{
+        margin-left: 0;
+    }
+    
+    .social{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vh;
+    }
+    
+    .footer1{
+        background-color: white;
+    }
+    
+    .nav-active{
+        transform: translateX(0%);
+        display: flex;}
+    
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);}
+    .toggle .line2{
+        opacity: 0;}
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);}
+        #reused_form{
+            width: 100%;
+        }
+        #fb-root{
+            display: none;
+        } 
+        .fb-page{
+            display: none;
+        }
+        .wrap{
+            display: none;
+        }
+        .part1 h1{
+            font-size: 40px;
+        }
+        .part1{
+            height: 60vh;
+        }
+        .contact h3{
+            font-size: 30px;
+        }
+        .fb h3{
+            font-size: 30px;
+        }
+        .footer3 h2{
+            padding-left: 0;
+        }
+        .footer3 p{
+            padding-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .footer1{
+            height: 30vh;
+            border-top: 2px solid #4aa998;
+        }
+        .footer2{
+            height: 30vh;
+        }
+        .footer3{
+            height: 40vh;
+        }
+        .logo img{
+            height: 70px;
+            width: 160px;
+        }
+    }
+
+    
+    
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }to{
+            opacity: 1;
+            transform: translateX(0px);
+        }}
+    
+    
